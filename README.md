@@ -10,3 +10,9 @@
 * Feature engineering to select the most relevant features that impact loan default rates.
 * Model selection and testing using various machine learning algorithms such as logistic regression and decision trees.
 * Model evaluation using metrics such as accuracy, precision, recall, and F1-score to determine the effectiveness of the model.
+
+
+
+## While decision tree appeared to be a better model than logistic regression for predicting which customers are likely to default on their loans based on the performance metrics, it had a low precision score. Therefore, it is recommended to consider and evaluate other models with relatively higher precision scores before making a final decision.
+
+
