@@ -267,12 +267,12 @@ for i in range(1000):
     log_reg = LogisticRegression()
 
 # # FIT THE LOGISTIC REGRESSION MODEL TO THE TRAINING DATA.. 
-log_reg.fit(x_train, y_train)
+    log_reg.fit(x_train, y_train)
     
-y_pred = log_reg.predict(x_test)
+    y_pred = log_reg.predict(x_test)
 
 # print(precision_score(y_test, y_pred),i)
-scores.append(precision_score(y_test, y_pred))
+    scores.append(precision_score(y_test, y_pred))
 
 
 # In[25]:
@@ -292,12 +292,6 @@ scores[np.argmax(scores)]
 # In[27]:
 
 
-x_train
-
-
-# In[28]:
-
-
 # DATA SCALING STEPS ON THE TRAINING DATASET.
 from sklearn.preprocessing import StandardScaler #(x - mean)/standard deviation
 scaler = StandardScaler()
@@ -305,7 +299,7 @@ x_train_scaled  =scaler.fit_transform(x_train)
 x_train = pd.DataFrame(x_train_scaled, index=x_train.index, columns = x_train.columns)
 
 
-# In[29]:
+# In[28]:
 
 
 # DATA SCALING STEPS ON THE TEST SET.
@@ -313,13 +307,13 @@ x_test_scaled = scaler.transform(x_test)
 x_test = pd.DataFrame(x_test_scaled, index=x_test.index, columns = x_test.columns)
 
 
-# In[30]:
+# In[29]:
 
 
 x_train['Bank Balance'].min()
 
 
-# In[31]:
+# In[30]:
 
 
 # IMPORT LOGISTIC REGRESSION.
@@ -338,7 +332,7 @@ log_reg.fit(x_train, y_train)
 y_pred = log_reg.predict(x_test)
 
 
-# In[32]:
+# In[31]:
 
 
 # CALCULATE THE PERFORMANCE METRICS. 
@@ -353,3 +347,5 @@ print('Precision:', precision)
 print('Recall:', recall)
 print('F1-Score:', f1score)
 
+
+# To summarize, based on the performance metrics, it can be concluded that logistic regression is a superior model for predicting loan default compared to the decision tree. This is due to its higher precision, accuracy, and F1 score, which indicates a better overall performance in correctly identifying defaulters and non-defaulters.
