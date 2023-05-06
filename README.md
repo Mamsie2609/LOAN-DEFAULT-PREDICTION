@@ -13,6 +13,6 @@
 
 
 
-## While decision tree appeared to be a better model than logistic regression for predicting which customers are likely to default on their loans based on the performance metrics, it had a low precision score. Therefore, it is recommended to consider and evaluate other models with relatively higher precision scores before making a final decision.
+## It can be concluded that logistic regression is a superior model for predicting loan default compared to the decision tree. This is because logistic regression achieved higher accuracy, precision, and F1 score. These results suggest that the logistic regression model is better at correctly identifying loan defaults, which can lead to more effective risk management for the lending institution.
 
 
